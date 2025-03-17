@@ -61,10 +61,6 @@ async function main() {
   // Get the wallet
   const wallet = getWallet();
   
-  // Predict counter address before deployment
-  const predictedAddress = await counterFactory.predictCounterAddressWithInitialNumber(salt, initialNumber);
-  console.log(`Predicted Counter address: ${predictedAddress}`);
-  
   // Create a new counter using the factory with paymaster params
   const tx = await counterFactory.createCounter(salt, initialNumber, {
     customData: {

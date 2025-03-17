@@ -6,7 +6,6 @@
   "license": "MIT",
   "repository": "https://github.com/matter-labs/zksync-hardhat-template.git",
   "scripts": {
-    "deploy": "hardhat deploy-zksync --script deploy.ts",
     "deploy:counterFactory": "hardhat deploy-zksync --script deploy-counter-factory.ts --network sophonMainnet",
     "interact": "hardhat deploy-zksync --script interact.ts",
     "compile": "hardhat compile",
